@@ -2,12 +2,14 @@ Shader "Sevenye2/SimpleVoxelizer"
 {
     Properties
     {
-        _Diffuse("Diffuse", COLOR) = (1,1,1,1)
+        _Transform("Transform", float) = 0
+        _Move("Move",float) = 0
+        _SizeTria("Size Triangle", float) = 0
+        _SizeCube("Size Cube",float) = 0
 
-        _Threshold("Threshold", float) = 0
+        _Color("VoxerLizer Color", COLOR) = (1,0,0,1)
 
-        _VoxelizerColor("_VoxerLizer Color", COLOR) = (1,0,0,1)
-
+        _TEX1("TEX1",2D) = "black"{}
     }
     SubShader
     {
